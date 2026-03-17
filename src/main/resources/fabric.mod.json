@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "test-mod1",
+	"version": "${version}",
+	"name": "Test mod1",
+	"description": "This is my first custom mod!",
+	"authors": [
+		"debrooo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/test-mod1/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.debrooo.testmod1.TestMod1"
+		],
+		"fabric-datagen": [
+			"net.debrooo.testmod1.TestMod1DataGenerator"
+		],
+		"client": [
+			"net.debrooo.testmod1.TestModClient"
+		]
+	},
+	"mixins": [
+		"test-mod1.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
